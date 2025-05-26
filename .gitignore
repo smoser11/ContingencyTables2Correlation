@@ -5,3 +5,4 @@
 .Ruserdata
 *.csv
 .csv
+.DS_Store
