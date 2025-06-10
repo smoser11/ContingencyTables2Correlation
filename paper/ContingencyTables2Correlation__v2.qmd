@@ -80,8 +80,8 @@ bib_target <- "references.bib"
 
 # (Re)create bibliography symlink
 if (fs::file_exists(bib_target)) fs::file_delete(bib_target)
-fs::link_create(bib_source, bib_target)
-message("- (Re)created bibliography symlink")
+fs::file_copy(bib_source, bib_target)
+message("- (Re)created bibliography COPY")
 
 # CSS setup
 fs::dir_create("css")
