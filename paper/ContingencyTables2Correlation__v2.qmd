@@ -284,7 +284,7 @@ $$\sum_j M_{i,j}=n_X(i),\quad\sum_i M_{i,j}=n_Y(j)$$
 
 **Algorithm for explicit calculation of $M_{i,j}$** (greedy method):
 
-\begin{algorithm}
+
 
 Initialize available frequencies explicitly:  $n'_Y(j)=n_Y(j)\quad\text{for each }j$
 
@@ -299,8 +299,8 @@ $$M_{i,j}=\min\left(n_X(i)-\sum_{s=1}^{j-1}M_{i,s},\, n'_Y(j)\right)$$
 
 Next, update explicitly: $$n'_Y(j)\leftarrow n'_Y(j)-M_{i,j}$$
 
-\end{algorithm}
 
+---
 
 Similarly, the minimum Pearson correlation ($r_{\text{min}}$) achieved by anti-comonotonic alignment (pairing largest ranks of $X$ with smallest ranks of $Y$) is explicitly:
 $$r_{\text{min}} = \frac{E[XY]_{\text{min}} - \bar{X}\bar{Y}}{\sigma_X \sigma_Y}.$$
