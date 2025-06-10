@@ -92,7 +92,7 @@ for (file in css_files) {
   source <- fs::path(css_dir, file)
   target <- fs::path("css", file)
   if (fs::file_exists(target)) fs::file_delete(target)
-  fs::link_create(source, target)
+  fs::file_copy(source, target)
   message(paste("- (Re)created symlink for", file))
 }
 
